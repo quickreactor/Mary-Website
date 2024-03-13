@@ -1,0 +1,158 @@
+:root {
+    --color_0: 255, 254, 248;
+    --color_1: 1, 53, 6;
+    --color_2: 1, 53, 6;
+    --color_3: 255, 254, 248;
+    --color_4: 255, 254, 248;
+    --color_5: 255, 254, 248;
+    --color_6: 255, 254, 248;
+    --color_7: 138, 253, 149;
+    --color_8: 28, 251, 49;
+    --color_9: 3, 163, 18;
+    --color_10: 1, 53, 6;
+    --color_11: 255, 254, 248;
+    --color_12: 138, 253, 149;
+    --color_13: 28, 251, 49;
+    --color_14: 3, 163, 18;
+    --color_15: 1, 53, 6;
+    --color_16: 106, 252, 120;
+    --color_17: 4, 202, 23;
+    --color_18: 1, 53, 6;
+    --color_19: 1, 35, 4;
+    --color_20: 0, 18, 2;
+    --color_21: 255, 255, 254;
+    --color_22: 255, 255, 252;
+    --color_23: 255, 254, 251;
+    --color_24: 255, 254, 249;
+    --color_25: 255, 254, 248;
+    --color_26: 255, 255, 252;
+    --color_27: 255, 254, 248;
+    --color_28: 255, 236, 122;
+    --color_29: 252, 216, 0;
+    --color_30: 126, 108, 0;
+    --color_31: 255, 255, 252;
+    --color_32: 255, 254, 248;
+    --color_33: 255, 236, 122;
+    --color_34: 252, 216, 0;
+    --color_35: 126, 108, 0;
+    --font_0: normal normal normal 22px / 1.41em oswald-extralight, oswald, sans-serif;
+    --font_1: normal normal normal 14px / 1.79em inter-light, inter-light, sans-serif;
+    --font_2: normal normal normal 28px / 1.375em oswald-extralight, oswald, sans-serif;
+    --font_3: normal normal normal 88px / 1.2em oswald-extralight, oswald, sans-serif;
+    --font_4: normal normal normal 72px / 1.25em oswald-extralight, oswald, sans-serif;
+    --font_5: normal normal normal 50px / 1.34em oswald-extralight, oswald, sans-serif;
+    --font_6: normal normal normal 40px / 1.35em oswald-extralight, oswald, sans-serif;
+    --font_7: normal normal normal 20px / 1.67em 'playfair display', serif;
+    --font_8: normal normal normal 18px / 1.75em 'playfair display', serif;
+    --font_9: normal normal normal 15px / 1.875em inter-light, inter-light, sans-serif;
+    --font_10: normal normal normal 14px / 1.79em inter-light, helve
+}
+
+body {
+    background-color: rgb(1, 53, 6);
+    width: 100vw;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color: beige;
+}
+.line-holder {
+    display: flex;
+    justify-content: center;
+}
+.line {
+    border-top: 1px solid beige;
+    width: 960px;
+    margin: auto;
+}
+.title {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.nav > div {
+    padding: 0px 20px
+}
+
+.mary-photo {
+    width: 440px;
+    height: 700px;
+    object-fit: contain;
+    object-position: center center;
+    margin: 20px;
+}
+
+.blurb {
+    width: 500px;
+    min-width: 500px;
+    margin: 20px;
+}
+
+.blurb-text {
+    font-family: oswald-extralight;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.oswald-main {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 22px;
+  color: beige;
+}
+
+.inter-heading {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 14px;
+    color: beige;
+}
+
+@media screen and (max-width: 768px) {
+    .main {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mary-photo {
+        height: 400px;
+    }
+
+    .blurb {
+        width: 380px;
+        min-width: 380px;
+    }
+
+    .blurb-text {
+        font-size: 20px;
+    }
+
+    .inter-heading {
+        font-size: 20px;
+    }
+
+    .mary-home {
+        font-size: 30px;
+    }
+
+    .line {
+        width: 50%;
+    }
+}
