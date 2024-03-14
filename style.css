@@ -1,7 +1,17 @@
+@font-face {
+    font-family: "Oswald-fallback";
+    src: local("Arial Narrow");
+    font-size: 16px;
+    line-height: 1.7;
+    letter-spacing: -0.15px;
+    word-spacing: -0.1px;
+}
+
 body {
     background-color: rgb(1, 53, 6);
     width: 100vw;
 }
+
 a {
     cursor: pointer;
     text-decoration: none;
@@ -12,11 +22,13 @@ a {
     display: flex;
     justify-content: center;
 }
+
 .line {
     border-top: 1px solid beige;
     width: 960px;
     margin: auto;
 }
+
 .title {
     display: flex;
     justify-content: center;
@@ -28,7 +40,8 @@ a {
     justify-content: center;
     padding: 20px;
 }
-.nav > div {
+
+.nav>div {
     padding: 0px 20px
 }
 
@@ -46,10 +59,6 @@ a {
     margin: 20px;
 }
 
-.blurb-text {
-    font-family: oswald-extralight;
-}
-
 .main {
     display: flex;
     justify-content: center;
@@ -57,13 +66,14 @@ a {
 }
 
 .oswald-main {
-  font-family: "Oswald", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 200;
-  font-style: normal;
-  font-size: 22px;
-  color: beige;
+    font-family: "Oswald", 'Oswald-fallback', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 22px;
+    color: beige;
 }
+
 
 .inter-heading {
     font-family: "Inter", sans-serif;
